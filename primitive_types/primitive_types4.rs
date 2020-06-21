@@ -2,13 +2,14 @@
 // Get a slice out of Array a where the ??? is so that the test passes.
 // Execute `rustlings hint primitive_types4` for hints!!
 
-// I AM NOT DONE
-
 #[test]
 fn slice_out_of_array() {
     let a = [1, 2, 3, 4, 5];
+    let b = ['a', 'b', 'c', 'd', 'e'];
 
-    let nice_slice = ???
+    let nice_slice_numbers = &a[1..4];
+    let nice_slice_characters = &b[1..4];
 
-    assert_eq!([2, 3, 4], nice_slice)
+    assert_eq!([2, 3, 4], nice_slice_numbers);
+    assert_eq!(['b', 'c', 'd'], nice_slice_characters);
 }
